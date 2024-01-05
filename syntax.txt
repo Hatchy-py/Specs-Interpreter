@@ -30,6 +30,37 @@ Logic commands:
  
   - logic:repeat:until->condition{}
   - logic:repeat:loops->number_of_loops{}
-  - logic:repeat:enum->n->list{}
+  - logic:repeat:enum->variable->list{}
   - logic:repeat:while->bool
-  
+
+#################################
+//still unimplemented
+Extern functions:
+
+ - function commands
+  - extern:function:define->function<-(parameters){}
+  - extern:function:execute->function<-(parameters)
+
+ - import commands
+  - extern:import->module->shortname
+  - extern:source->file/module:import->function/module
+
+#################################
+//still unimplemented
+Class commands:
+ 
+ - Class definition:
+	- class:define->classname{}
+   
+ - Class instantiation:
+	- class:instantiate->classname->instance_name{}
+   
+ - Attribute manipulation:
+	- class:attribute:set->instance_name->attribute_name->value{}
+	- class:attribute:get->instance_name->attribute_name{}
+   
+ - Method definition:
+	- class:method:define->classname->method_name{}
+   
+ - Method execution:
+	- class:method:execute->instance_name->method_name->arguments{}
