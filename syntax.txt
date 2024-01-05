@@ -17,7 +17,7 @@ Console comands:
  - console:read->"question"
 
  ###############################
-
+// still unimplemented
 Logic commands:
 
  - Conditions commands:
